@@ -2,7 +2,7 @@ FROM osrm/osrm-backend
 LABEL org.freenas.interactive="false"                     \
       org.freenas.version="0.0.1"                         \
       org.freenas.upgradeable="false"                     \
-	  org.freenas.command="" \
+	  org.freenas.command="osrm/osrm-backend osrm-extract -p /opt/car.lua /data/berlin-latest.osm.pbf" \
       org.freenas.expose-ports-at-host="true"             \
       org.freenas.autostart="true"                        \
       org.freenas.port-mappings="5000:5000/tcp"           \
