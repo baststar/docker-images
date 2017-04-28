@@ -2,7 +2,10 @@ FROM osrm/osrm-backend
 LABEL org.freenas.interactive="false"                     \
       org.freenas.version="0.0.1"                         \
       org.freenas.upgradeable="false"                     \
+<<<<<<< HEAD
 	  org.freenas.command="" \
+=======
+>>>>>>> master
       org.freenas.expose-ports-at-host="true"             \
       org.freenas.autostart="true"                        \
       org.freenas.port-mappings="5000:5000/tcp"           \
