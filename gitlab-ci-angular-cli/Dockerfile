@@ -17,6 +17,7 @@ ENV DISPLAY :99.0
 ENV CHROME_BIN /usr/bin/google-chrome
 RUN ln -s /usr/bin/google-chrome /usr/bin/chrome
 RUN ln -s /usr/bin/google-chrome /usr/bin/chromium-browser
+RUN ln -s /usr/bin/google-chrome /usr/bin/chromium
 
 
 RUN chmod +x /etc/init.d/xvfb \
