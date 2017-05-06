@@ -15,6 +15,9 @@ ADD entrypoint.sh /entrypoint.sh
 
 ENV DISPLAY :99.0
 ENV CHROME_BIN /usr/bin/google-chrome
+RUN ln -s /usr/bin/google-chrome /usr/bin/chrome
+RUN ln -s /usr/bin/google-chrome /usr/bin/chromium-browser
+
 
 RUN chmod +x /etc/init.d/xvfb \
     && chmod +x /entrypoint.sh
