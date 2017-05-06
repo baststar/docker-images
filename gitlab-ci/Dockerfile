@@ -15,7 +15,7 @@ ENV CHROME_BIN /usr/bin/chrome
 
 RUN apt-get install -y git
 
-RUN curl -sL https://deb.nodesource.com/setup_6.x | -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN apt-get install -y nodejs
 
 RUN npm install -g @angular/cli@latest
