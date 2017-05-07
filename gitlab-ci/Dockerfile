@@ -9,12 +9,10 @@ RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
 
 RUN apt-get update
 
-RUN apt-get install -y build-essential curl sudo git google-chrome-unstable
+RUN apt-get install -y build-essential curl sudo git google-chrome-unstable nodejs
 
 RUN apt-get clean && rm -rf /tmp/* /var/tmp/*
 
 ENV CHROME_BIN /usr/bin/google-chrome-unstable
-
-RUN apt-get install -y nodejs
 
 RUN npm install -g @angular/cli@latest
